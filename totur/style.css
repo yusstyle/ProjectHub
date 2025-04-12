@@ -1,0 +1,423 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #2D1B3D, #7C5A91);
+    color: #fff;
+    padding-top: 70px; /* Pushes content below the navbar */
+}
+#Tor{
+  font-size:80px;
+}
+
+/* Header */
+header {
+    background: rgba(0,0,0);
+    padding: 30px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: block;
+    position: relative;
+    z-index: 1;
+    user-select: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 60px;
+    height: 15px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 3px;
+    transition: all 0.4s;
+    
+}
+
+/* Side Navigation */
+#side-nav {
+    position: fixed;
+    top: 0;
+    left: -350px;
+    width: 350px;
+    height: 100vh;
+    background-color: #333;
+    padding: 20px;
+    transition: all 0.4s;
+}
+
+#side-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#side-nav ul li {
+    margin-bottom: 20px;
+}
+
+#side-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+/* Menu Toggle */
+#menu-toggle:checked ~ #side-nav {
+    left: 0;
+}
+
+
+/* Logo Animation 
+.logo {
+    animation: logo-animation 2s infinite;
+    animation-play-state: running;
+    float: right;
+    width: 50%;
+    margin-top: -12%;
+}*/
+
+/*@keyframes logo-animation {
+    0% {
+        transform: translate(50px, 50px);
+        animation-timing-function: ease-in;
+    }
+    60% {
+        transform: translate(50px, 70px);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        transform: translate(50px, 50px
+}
+*/
+/* Hero Section */
+.hero {
+    text-align: left;
+    padding: 100px;
+    margin-top: 80px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #c69ef3;
+    color: #222;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background: #6e35ae;
+}
+
+/* How It Works Section */
+.how-it-works {
+    text-align: center;
+    padding: 60px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 40px auto;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.how-it-works h2 {
+    font-size: 2rem;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.step {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.step:hover {
+    transform: scale(1.05);
+}
+
+.step h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Welcome Section */
+.welcome-section {
+    text-align: center;
+    margin: 80px auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    width: 80%;
+    border-radius: 10px;
+}
+
+/* Profile and Booking Sections */
+.profile-container,
+.booking-container,
+.auth-container,
+.tutors-section {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.booking-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.booking-container label {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.booking-container input,
+.booking-container select {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+.booking-container button {
+    margin-top: 15px;
+    background: #6e35ae;
+    color: #222;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.booking-container button:hover {
+    background: #3b2458;
+}
+
+/* Profile Section */
+.profile-section {
+    text-align: center;
+    margin: 20px auto;
+    width: 50%;
+}
+
+.profile-card {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.profile-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    background: #66389e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background: #3b2458;
+}
+/* why choose us section*/
+.why-choose-us {
+    text-align: center;
+    padding: 60px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 40px auto;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.feature {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: scale(1.05);
+}
+/*Testimony styling  section*/
+.testimonials {
+    text-align: center;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+.contact {
+    text-align: center;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+.contact button {
+    background: #6e35ae;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* styling for tutor gallery*/
+.image-gallery {
+    text-align: center;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.grid-item {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+}
+/*styling Whatsapp contact*/
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 80px;
+    height: 80px;
+    background-color: #25D366; /* WhatsApp Green */
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whatsapp-float img {
+    width: 50px;
+    height: 50px;
+    filter: brightness(1.2); /* Makes the logo stand out */
+}
+/* Footer */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #000;
+    color: white;
+    width: 100%;
+    margin-top:150px;
+}

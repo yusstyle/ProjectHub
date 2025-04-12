@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutor Registration</title>
+    <link rel="stylesheet" href="stys.css">
+</head>
+  <body style="background: url('photo4.jpg') no-repeat center center fixed; background-size: cover;">
+    <section>
+    <div class="container">
+      
+   <img src="torlogo.jpg " alt="TutorConnect Logo " style="border-radius:50px; float: center" width="100px" height="100px" >
+  <h2>Register as a Student.</h2>
+        <p>Join our university tutoring platform and start earning by helping students.</p>
+   
+
+        <form id="registrationForm">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" placeholder="Enter your full name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+
+            <label for="Registration Number">Registration Number</label>
+            <input type="text" id="schoolID" placeholder="Enter your Reg No." required>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    </section>
+ <style>
+.container {
+    background:#7c5A91;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h2 {
+    color: antiquewhite;
+}
+
+p {
+    font-size: 14px;
+    color: floralwhite;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    background-color: purple;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: maroon;
+}
+    </style>   
+
+    <script src="script.js"></script>
+</body>
+</html>
